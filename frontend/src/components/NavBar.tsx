@@ -83,10 +83,6 @@ export default function NavBar() {
 
 	let buttons: RouteButton[] = [
 		{
-			Route: "/vote",
-			Text: "Vote",
-		},
-		{
 			Route: "/polls",
 			Text: "Polls",
 		},
