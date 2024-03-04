@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import PollsPage from './pages/PollsPage';
-import ProfilePage from './pages/ProfilePage';
-import VotePage from './pages/VotePage';
 import CreatePollPage from './pages/CreatePollPage';
 import PollPage from './pages/PollPage';
 
@@ -13,11 +11,7 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <HomePage />,
-		errorElement: <div>404 Not Found</div>
-	},
-	{
-		path: "/vote",
-		element: <VotePage />
+		errorElement: <div>404 Not Found</div>,
 	},
 	{
 		path: "/poll/:id?",
@@ -30,11 +24,7 @@ const router = createBrowserRouter([
 	{
 		path: "/polls/create",
 		element: <CreatePollPage />
-	},
-	{
-		path: "/profile",
-		element: <ProfilePage />
-	},
+	}
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
